@@ -1,0 +1,25 @@
+{
+  "name": "invest-technical-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tak1827/invest-technical-analysis.git"
+  },
+  "author": "tak1827",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tak1827/invest-technical-analysis/issues"
+  },
+  "homepage": "https://github.com/tak1827/invest-technical-analysis#readme",
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.3",
+    "mongodb": "^3.1.4",
+    "slack-node": "^0.1.8",
+    "twitter": "^1.7.1"
+  }
+}
