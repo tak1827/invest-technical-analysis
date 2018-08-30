@@ -2,3 +2,5 @@
 *
 # Except this file
 !.gitignore
+!btc-buy.csv
+!btc-sell.csv

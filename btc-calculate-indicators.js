@@ -5,6 +5,7 @@
 /* Read modules */
 var mg = require(__dirname+'/lib/mongo-util.js');
 var ci = require(__dirname+'/lib/calculate-indicators.js');
+var ut = require(__dirname+'/lib/util.js');
 
 const mongo = { db: 'coin', collection: 'btc' };
 let btcDocs = [];
@@ -37,13 +38,13 @@ async function mainTask() {
     const result = Object.assign(_dr24h, _dr7d, _dr25d, _rsi24h, _rsi7d, _rsi25d, _bb24h, _bb7d, _bb25d);
 
     // Update DB
-    result.forEach(async (elm, i) => {
+    for (let i = 0; i < result.length; i++) {
+      let elm = result[i];
       await mg.update(mongo.db, mongo.collection, { _id: elm._id }, elm);
       console.log(elm);
-    });
+  }
 
   } catch(e) { console.log(e); }
 }
-
 
 mainTask();
