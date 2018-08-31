@@ -1,5 +1,5 @@
 /**
- * Analyze btc by calculating buy&sell based on indicator
+ * Cimulate btc buy and sell
  */
  
 /* Read modules */
